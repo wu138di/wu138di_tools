@@ -1,0 +1,68 @@
+# wu138di_tools
+
+wu138di 的实用小工具合集，持续更新。
+
+| 工具 | 版本 | 下载 |
+| --- | --- | --- |
+| 工具 1：wu138di X GIF下载器 | v1.0 · Windows x64 | [前往发布页](https://github.com/wu138di/wu138di_tools/releases/tag/x-gif-v1.0) |
+
+## 工具 1：wu138di X GIF下载器 v1.0
+
+相信大家在 X 上刷着刷着，肯定有过这样的疑惑：为什么图片可以直接复制、下载，GIF 动图却没那么方便？
+
+不少看起来是 GIF 的动图，实际上是 X 提供的循环 MP4 视频。所以我写了这款小工具：读取帖子里的媒体链接，保留原始 MP4，再转换成 GIF，方便大家保存和使用。
+
+配图与程序展示：[前往 X 查看](https://x.com/wudihao138hack)。（爱 Miku！）
+
+### 一：使用教程
+
+#### 1. 粘贴帖子链接，确认预览
+
+下载发布包，解压后打开 **wu138di X GIF下载器 v1.0.exe**，将带有图片、视频或动图的 X 帖子网址粘贴进链接框。
+
+右侧会自动生成预览，动图会循环播放；一条帖子里有多项媒体时，可以通过预览区的左右箭头切换。确认无误后，点击 **下载**。
+
+[参考帖：Gangban「大家早上好！又是一天周一，今天也继续努力吧😋……」](https://x.com/798145343h/status/2114550605356122308/photo/2)
+
+预览示例：[前往 X 查看](https://x.com/wudihao138hack)。
+
+默认保存到 Windows 当前用户的“下载”文件夹下的 **wu138di X GIF下载器** 文件夹，通常位于 C 盘。点击 **更改** 即可自行选择保存位置。
+
+#### 2. 等待转换，查看保存结果
+
+下载 GIF 动图时，中间会有一个转换过程，耐心等待即可。默认会保存两份文件：
+
+- **MP4**：直接保存平台提供的原始视频，不重新压缩。
+- **GIF**：转换后的循环动图，方便作为图片使用。
+
+看到 **下载完成** 后，点击 **打开保存文件夹** 即可查看。
+
+下载完成界面与文件示例：[前往 X 查看](https://x.com/wudihao138hack)。
+
+右上角的选项按钮可以切换 **跟随链接 / 全部媒体**，也可以关闭 **另存 GIF**。
+
+### 二：下载与运行
+
+- [前往 Release 下载](https://github.com/wu138di/wu138di_tools/releases/tag/x-gif-v1.0)
+- 支持 Windows 10 / 11 x64。
+- 可直接下载 EXE，也可下载 ZIP 发布包后解压运行。
+- 已内置 Python 和 FFmpeg，无需另行配置；系统需有 Microsoft Edge WebView2 Runtime。
+- 仅支持公开可访问的 X / Twitter 帖子；网络、帖子权限或平台接口变化可能影响获取。
+- GIF 有 256 色限制，文件通常也比 MP4 大；需要保留平台源画质时，使用同时保存的 MP4。
+
+### 三：为爱发电
+
+制作实属不易，如果这个小工具帮到了你，可以点击程序右上角的 **爱心按钮**，使用微信赞赏码支持我。谢谢啦！
+
+沿用 [NHK Video Download 仓库](https://github.com/wu138di/NHK-Video-Download#为爱发电) 中的同一张赞赏码，已原样内置到工具中。
+
+### 联系我
+
+- X：[@wudihao138hack](https://x.com/wudihao138hack)
+- GitHub：[wu138di](https://github.com/wu138di)
+
+## 源码与构建
+
+[工具源码与构建说明](tools/x-gif-downloader/README.md) · [第三方组件说明](tools/x-gif-downloader/NOTICE.md)
+
+本工具不隶属于 X。请尊重原内容作者的版权与使用许可。

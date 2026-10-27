@@ -1,0 +1,5 @@
+FFmpeg 7.1 essentials build by Gyan, used as a separate subprocess.
+Upstream source: https://ffmpeg.org/releases/ffmpeg-7.1.tar.xz
+Build scripts and dependency sources: https://github.com/GyanD/codexffmpeg
+Build distributor: https://www.gyan.dev/ffmpeg/builds/
+FFmpeg license: GPL version 3 or later. See FFmpeg-GPLv3.txt.
