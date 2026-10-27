@@ -100,7 +100,11 @@ def normalize_media(items):
             kind = "gif" if kind in {"animated_gif", "gif"} else "video"
         else:
             raise ValueError("第 %d 项媒体类型暂未支持。" % i)
-        result.append({"index": i, "kind": kind, "url": url, "ext": ext,
+        thumbnail = raw.get("media_url_https") or raw.get("thumbnail_url") or (url if kind == "photo" else "")
+        thumb_parts = urlparse(thumbnail)
+        if thumb_parts.scheme != "https" or thumb_parts.hostname != "pbs.twimg.com":
+            thumbnail = ""
+        result.append({"index": i, "kind": kind, "url": url, "ext": ext, "thumbnail": thumbnail,
                        "width": width, "height": height,
                        "name": "第 %d 项 · %s" % (i, {"photo": "图片", "video": "视频", "gif": "动图"}[kind]),
                        "status": "等待下载", "progress": 0, "bytes": 0, "files": []})

@@ -1,6 +1,6 @@
 # 第三方组件与素材
 
-本工具由 wu138di 维护。此说明不改变第三方组件及素材的既有许可。
+本工具由 wu138di 维护，自行维护的程序代码采用仓库根目录的 [MIT License](../../LICENSE) 开源。此说明不改变第三方组件及素材的既有许可，尤其不将 FFmpeg 的 GPL 许可改为 MIT。
 
 | 组件 | 来源 | 许可 |
 | --- | --- | --- |
@@ -16,6 +16,6 @@ FFmpeg 作为独立子进程调用。许可全文和来源说明见 `licenses/FF
 
 其他已收集的许可文件见 `licenses/`。Windows WebView2 Runtime 使用微软自身的许可，由用户的系统提供，不作为本仓库的源码授权内容。
 
-背景插画由项目发布者提供，用于本工具界面；不属于程序代码的授权范围。Logo 沿用发布者提供的 `kinisaki.ico`。赞赏码原样沿用发布者此前在 [NHK Video Download](https://github.com/wu138di/NHK-Video-Download#为爱发电) 中公开的图片。
+背景插画由项目发布者提供，用于本工具界面；不属于程序代码的授权范围。Logo 沿用发布者提供的 `kinisaki.ico`。赞赏码使用发布者本次指定的新图片，原样保存。
 
 本项目不隶属于 X/Twitter、微软、Crypton 或 FFmpeg；对第三方内容的下载与使用应遵守相应权利人的许可。

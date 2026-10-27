@@ -67,6 +67,10 @@ class API:
         state = self._manager.snapshot()
         state["preferences"] = dict(self._settings)
         state["preview"] = self._preview.snapshot()
+        thumbnails = {item["index"]: item.get("thumbnail_src", "") for item in state["preview"]["items"]}
+        for item in state["items"]:
+            item["thumbnail_src"] = thumbnails.get(item["index"], "")
+            item.pop("thumbnail", None)
         return state
 
     def preview_post(self, url, all_media=False):

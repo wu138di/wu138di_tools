@@ -45,6 +45,13 @@ class ResolverTests(unittest.TestCase):
         with patch('engine.request_json', side_effect=[ValueError(),fixture]):
             self.assertEqual(resolve('123',threading.Event())['provider'], 'FxTwitter')
 
+    def test_media_thumbnail_is_validated(self):
+        item = {'type': 'gif', 'format': 'video/mp4', 'url': 'https://video.twimg.com/a.mp4',
+                'thumbnail_url': 'https://pbs.twimg.com/tweet_video_thumb/a.jpg'}
+        self.assertEqual(normalize_media([item])[0]['thumbnail'], item['thumbnail_url'])
+        item['thumbnail_url'] = 'https://other.example/track.jpg'
+        self.assertEqual(normalize_media([item])[0]['thumbnail'], '')
+
     def test_reservation_preserves_existing(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

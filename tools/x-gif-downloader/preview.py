@@ -144,6 +144,7 @@ class PreviewManager:
                 previews = [{key: item[key] for key in ['index', 'kind', 'width', 'height', 'name']} for item in items]
                 for preview, item in zip(previews, items):
                     preview['src'] = self._server.register(item['url'])
+                    preview['thumbnail_src'] = self._server.register(item['thumbnail']) if item.get('thumbnail') else ''
                 self._state = {'phase': 'ready', 'items': previews, 'message': ''}
         except Cancelled:
             pass
