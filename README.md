@@ -54,15 +54,9 @@ wu138di 的实用小工具合集，持续更新。
 
 制作实属不易，如果这个小工具帮到了你，可以点击程序右上角的 **爱心按钮**，使用微信赞赏码支持我。谢谢啦！
 
-沿用 [NHK Video Download 仓库](https://github.com/wu138di/NHK-Video-Download#为爱发电) 中的同一张赞赏码，已原样内置到工具中。
 
 ### 联系我
 
 - X：[@wudihao138hack](https://x.com/wudihao138hack)
 - GitHub：[wu138di](https://github.com/wu138di)
 
-## 源码与构建
-
-[工具源码与构建说明](tools/x-gif-downloader/README.md) · [第三方组件说明](tools/x-gif-downloader/NOTICE.md)
-
-本工具不隶属于 X。请尊重原内容作者的版权与使用许可。
